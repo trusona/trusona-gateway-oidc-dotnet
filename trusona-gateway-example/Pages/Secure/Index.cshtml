@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+}
+
+<dl>
+  @foreach (var claim in User.Claims)
+  {
+    <dt>@claim.Type</dt>
+    <dd>@claim.Value</dd>
+  }
+</dl>
