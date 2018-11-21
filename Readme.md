@@ -13,7 +13,7 @@ Signup for a Trusona Developers account at https://developers.trusona.com/
 
 ## Running the Example
 
-1. Checkout the project from Git
+1. Checkout the project from GitHub
 1. Edit `appsettings.json` and add your `ClientID` value
 1. Execute `dotnet run --project trusona-gateway-example`
 1. Open a browser and navigate to `https://localhost:5001`
