@@ -10,12 +10,15 @@ Signup for a Trusona Developers account at https://developers.trusona.com/
 * .NET Core 2.1
 * Trusona Developers Account
 
-## Running the Example
+## Project setup
 
 1. Checkout the project from GitHub
 1. Email `support@trusona.com` and let them know that you want to run this example. Include the email that is displayed when you log in to your Trusona Developers account.
 1. Edit `appsettings.json` and add your `ClientID` value
 1. Execute `dotnet run --project trusona-gateway-example`
+
+## Using the example
+
 1. Open a browser and navigate to `https://localhost:5001`
 1. Click the “Login with Trusona button” that you see on the screen
 1. Open the Trusona App on your phone
@@ -24,20 +27,15 @@ Signup for a Trusona Developers account at https://developers.trusona.com/
 1. Now you’ve been redirected back to the example application running on your machine
 1. See the user information displayed on the screen that indicates a successful login
 
-## Technical Information
+## Technical information
 
-The following snippet from `Startup.cs` descibes how you configure .NET to use OpenID Connect for
-integration with Trusona.
+The following snippet from `Startup.cs` descibes how you configure .NET to use OpenID Connect for integration with Trusona.
 
-On startup, the framework will auto-configure using Trusona's metadata address and
-the your Client ID.
+On startup, the framework will auto-configure using Trusona's metadata address and the your Client ID.
 
-In this example we are requesting an e-mail address and profile information in addition
-to the unique `nameidentifier`.
+In this example we are requesting an e-mail address and profile information in addition to the unique `nameidentifier`.
 
-Note: There is an outstanding issue with iOS and Safari and the .NET framework. This
-example as configured does not work on these devices. For more information, see
-https://github.com/aspnet/Security/issues/1864
+Note: There is an outstanding issue with iOS and Safari and the .NET framework. This example as configured does not work on these devices. For more information, see https://github.com/aspnet/Security/issues/1864
 
 ```csharp
 services
